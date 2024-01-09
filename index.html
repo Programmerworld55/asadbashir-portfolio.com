@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+   
+
+    <div class="headingdiv">
+        <div class="sidebar">
+            <div class="bar" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li class="close-icon" onclick="toggleMenu()"><i class="fa-solid fa-times"></i></li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>Asad Bashir</h1>
+            <p>Web Developer | UI/UX Designer</p>
+        </div>
+    </div>
+
+    <div class="second_container">
+        <div class="column1">
+            <header>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="navbar_items">
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Projects</li></a>
+                            <a href="#"><li>Tech Stack</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="introduction-section">
+                <div class="introduction-text">
+                    <h2>Hey,<br> My Name is <span>Asad Bashir </span> <br>I build Things For <span id="span2">Web</span></h2>
+                    <p>Welcome to my portfolio. <br>Explore my work and skills!</p>
+                </div>
+                <div class="profile-image">
+                    
+                </div>
+            </div>
+
+            <div class="techstackmaincontainer">
+                <h1>My tech Stack</h1>
+                <div class="underline"></div>
+                <p>Technologies I am working with</p>
+                
+                <div class="mytech_stack1">
+                    <div class="item11 item1"><i class="fab fa-html5"></i></div>
+                    <div class="item11 item2"><i class="fab fa-css3-alt"></i></div>
+                    <div class="item11 item3"><i class="fab fa-js-square"></i></div>
+                    <div class="item11 item4"><i class="fab fa-node-js"></i></div>
+                    <div class="item11 item5"><i class="fab fa-bootstrap"></i></div>
+                </div>
+                
+                <div class="mytech_stack2">
+                    <div class="item22 item4 rotate"><i class="fab fa-react"></i></div>
+                    <div class="item22 item5 rotate"><i class="fab fa-wordpress"></i></div>
+                    <div class="item22 item6 rotate"><i class="fab fa-flutter"></i></div>
+                    <div class="item22 item7 rotate"><i class="fab fa-android"></i></div>
+                    <!-- Add more icons related to app development or other technologies here -->
+                </div>
+            </div>
+
+
+            <div class="video-section">
+                <h1>My Work in Action</h1>
+                <div class="underline"></div>
+                <video controls width="100%" id="mainVideo">
+                    <source src="resources/earning-website.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <!-- New video initially hidden -->
+                <video controls width="100%" id="additionalVideo" style="display: none;">
+                    <source src="resources/quickcode-website.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <!-- Show more button -->
+                <button onclick="showMore()">Show More</button>
+            </div>
+        </div>
+
+        <div class="column2">
+            <h2>Projects</h2>
+            <div class="firsttwoprojects">
+                <div class="project1">
+                    <img src="resources/website_image.jpg">
+                    <h3>Online Earning Website</h3>
+                    <p>I've created an online earning website using HTML, CSS, and JavaScript for the frontend, coupled with Node.js for the backend. This platform offers users a straightforward and secure way to explore various earning opportunities, ranging from surveys to freelancing tasks. With a clean and intuitive interface, users can seamlessly navigate the website, track their earnings in real-time, and engage in diverse income-generating activities. The positive user feedback attests to the platform's effectiveness and simplicity in opening doors to new financial possibilities.</p>
+                </div>
+                <div class="project2">
+                    <img src="resources/quick coder.jpg">
+                    <h3>Wordpress Website</h3>
+                    <p>I've created a WordPress website that features both company advertisements and a dynamic blog. The site is designed to be fully responsive on mobile devices, ensuring a smooth and enjoyable experience for users on the go. The blog section serves as a hub for sharing company updates and engaging content, while strategically placed advertisements contribute to the website's revenue model. The mobile-responsive design allows visitors to seamlessly navigate through blog posts and explore company promotions, enhancing both user engagement and accessibility.</p>
+                </div>
+              </div>
+              <div class="secondtwoprojects">
+                <div class="project2">
+                    <img src="resources/weather.jpeg">
+                    <h3>Dynamic Weather App</h3>
+                    <p>I've developed a dynamic weather website using Node.js and APIs, providing users with real-time weather information at their fingertips. Leveraging Node.js for the backend, the website interacts with weather APIs to fetch up-to-date data, offering accurate and reliable forecasts. The user interface is designed for simplicity and intuitiveness, allowing users to easily input locations and receive detailed weather reports instantly. Whether it's current conditions, forecasts, or extended outlooks, this website ensures that users stay informed about the weather in an accessible and user-friendly manner.</p>
+                </div>
+                <div class="project2">
+                    <img src="resources/frelance.jpeg">
+                    <h3>Freelancing Website Continue..</h3>
+                    <p>
+                        I am currently engaged in a freelancing project where I am leveraging my skills to deliver tailored solutions for my clients. This project involves a dynamic range of tasks, and I am committed to providing high-quality work in areas such as web development, design, or any other specified requirements. I am actively collaborating with clients, ensuring open communication to meet their unique project needs and expectations. This freelancing endeavor allows me to showcase my expertise while delivering valuable services to clients in a flexible and efficient manner.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="services-content">
+        <h1>My services</h1>
+        <div class="underline"></div>
+    </p>
+    </div>
+    <div id="services">
+        <div id="services">
+            <div class="container">
+                <!-- <h1 class="sub_title">My Services</h1> -->
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>As a proficient web developer, I offer a comprehensive range of services to bring your digital ideas to life. My skill set includes expertise in HTML, CSS, JavaScript, Bootstrap, Node.js, Express, and MongoDB. Whether you need a visually appealing and responsive website, a dynamic web application, or seamless backend solutions, I've got you covered. With a keen eye for design and a commitment to efficient coding practices, I ensure that your projects not only meet but exceed industry standards. Let's collaborate to turn your vision into a fully functional and aesthetically pleasing digital experience.</p>
+                        <!-- <a href="#">Learn more...</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Development</h2>
+                        <p>As an app developer, I specialize in crafting cross-platform mobile applications using Flutter. My proficiency extends to creating engaging and user-friendly apps for both Android and iOS platforms. Leveraging the versatile framework of Flutter and the Dart programming language, I ensure that your mobile applications stand out with visually appealing interfaces and seamless functionality. Whether you have a specific concept in mind or need assistance in refining your ideas, I am here to turn your app aspirations into a reality. Let's work together to build innovative and high-quality mobile solutions that meet your unique requirements.</p>
+                        <!-- <a href="#">Learn more...</a> -->
+                    </div>
+                    <div>
+                        <i class="fab fa-wordpress"></i>
+                        <h2>WordPress Development</h2>
+                        <p>As a WordPress developer, I bring a lot of experience to the table. I'm all about creating dynamic and responsive websites using WordPress. I use my skills in HTML, CSS, and JavaScript to make sure your WordPress site not only looks great but also works smoothly. Whether you need a custom theme, a new plugin, or just want to make your site run better, I'm here to help. Let's work together to turn your ideas into a fantastic WordPress website that suits your needs perfectly.</p>
+                        <!-- <a href="#">Learn more...</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********************** -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        asadbashir2229526@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03400569133</p>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/profile.php?id=100071480297394&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/asadbashir7755?t=WCFUHaePx4DnLL6U0Be5Eg&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/programmer_tech?igsh=bG81dG83OHY4cnVu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/asad-bashir-772b73299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- <a href="resources/my-cv.pdf" Downloa class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Asad | All rights reserved | Made<i class="fa-solid fa-heart"></i> by Me</p>
+    </div>
+    
+</body>
+<script>
+    function toggleMenu() {
+    var mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('show');
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZxJ6EvtlUlZqoanzVw_uTORIJA5M71_eX05mTEJYcyJ2IcH4WY4haTACT-ZDA2Os8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    function showMore() {
+        var mainVideo = document.getElementById('mainVideo');
+        var additionalVideo = document.getElementById('additionalVideo');
+
+        // Toggle the display property
+        if (mainVideo.style.display === 'none') {
+            mainVideo.style.display = 'block';
+            additionalVideo.style.display = 'none';
+        } else {
+            mainVideo.style.display = 'none';
+            additionalVideo.style.display = 'block';
+        }
+    }
+</script>
+</html>
